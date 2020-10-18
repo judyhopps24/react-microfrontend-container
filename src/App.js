@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import MicroFrontend from "./MicroFrontend";
+//import LibraryMusicIcon from '@material-ui/icons/LibraryMusic';
 
 import "./App.css";
 
@@ -15,8 +16,9 @@ const {
 function Header() {
   return (
     <div className="banner">
-      <h1 className="banner-title">&#128571; Cats and Dogs &#128021;</h1>
-      <h4>Random pics of cats and dogs</h4>
+      {/* <LibraryMusicIcon/> */}
+      <h1 className="banner-title"> Music Player </h1>
+      <h4>Listen to Your favorite Songs</h4>
     </div>
   );
 }
@@ -50,14 +52,14 @@ function Home({ history }) {
   return (
     <div>
       <Header />
-      <div className="home">
+      {/* <div className="home">
         <input
           placeholder="Insert a greeting"
           defaultValue={input}
           onBlur={(e) => setInput(e.target.value)}
         />
         <button onClick={handleOnClick}>Greet Me</button>
-      </div>
+      </div> */}
 
       <div className="home">
         <div className="content">
